@@ -95,4 +95,4 @@ var element = (function(){
 
 })();
 
-Polymer('large-form',element);
+Polymer('fsc-form',element);

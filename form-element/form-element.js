@@ -53,4 +53,4 @@ var element = (function(){
 
 })();
 
-Polymer('form-input',element);
+Polymer('form-element',element);
