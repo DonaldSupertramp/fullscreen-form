@@ -1,0 +1,20 @@
+.form-field {
+  display: none; }
+
+.form-field label {
+  display: block;
+  font-size: 50px; }
+
+.form-field input {
+  display: block;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #222222;
+  font-size: 62px;
+  color: #414141; }
+
+.form-field.active {
+  display: block; }
+
+/*# sourceMappingURL=form-element.css.map */

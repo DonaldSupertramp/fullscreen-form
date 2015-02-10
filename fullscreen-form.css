@@ -1,0 +1,72 @@
+.form-wrapper {
+  position: relative;
+  width: 95%; }
+  .form-wrapper .large-form {
+    width: 100%;
+    margin: 25px 0; }
+    .form-wrapper .large-form .large-form-list {
+      list-style: none; }
+    .form-wrapper .large-form .form-progress {
+      font-size: 38px;
+      margin: 10% 0;
+      display: inline-block; }
+    .form-wrapper .large-form .prev, .form-wrapper .large-form .next {
+      display: inline-block;
+      margin: 10% 1.5%;
+      font-size: 32px; }
+  .form-wrapper .form-continue {
+    cursor: pointer;
+    position: absolute;
+    bottom: 75px;
+    right: 75px;
+    font-size: 28px;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 16px; }
+    .form-wrapper .form-continue:after {
+      content: 'or press Enter';
+      color: #858585;
+      font-size: 16px;
+      display: block;
+      margin: 3px; }
+  .form-wrapper .result {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: 0;
+    border: 1px solid #ddd; }
+    .form-wrapper .result.expand-true {
+      width: 95%;
+      min-height: 300px; }
+    .form-wrapper .result .heading {
+      margin: 2% 10%; }
+    .form-wrapper .result .result-item {
+      display: block; }
+      .form-wrapper .result .result-item .result-label {
+        display: inline-block;
+        font-size: 22px;
+        color: #b3b3b3;
+        padding: 12px 5px; }
+        .form-wrapper .result .result-item .result-label:after {
+          content: ':'; }
+      .form-wrapper .result .result-item .result-value {
+        border: none;
+        outline: none;
+        display: inline-block;
+        font-size: 18px;
+        background: transparent;
+        padding: 6px 5px; }
+    .form-wrapper .result .result-submit {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 100%;
+      display: block;
+      background: #87ef7a;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      padding: 4px 8px; }
+
+/*# sourceMappingURL=fullscreen-form.css.map */

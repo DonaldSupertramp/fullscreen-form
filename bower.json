@@ -1,0 +1,27 @@
+{
+  "name": "fullscreen-form",
+  "main": "fullscreen-form.js",
+  "version": "0.0.0",
+  "authors": [
+    "Jan Schreyer <sprottenwels@googlemail.com>"
+  ],
+  "description": "Polymer powered component for distraction free form input",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "Polymer",
+    "Form",
+    "Fullscreen",
+    "distraction",
+    "free"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

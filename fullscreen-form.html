@@ -1,0 +1,41 @@
+<polymer-element name="fsc-form">
+
+    <template>
+
+        <link type="text/css" rel="stylesheet" href="fullscreen-form.css">
+
+        <div class="form-wrapper">
+
+            <!-- Input area -->
+            <form class="large-form hide-{{state.showResults}}">
+                <ol class="large-form-list" id="list">
+                    <content></content>
+                </ol>
+
+                <span class="prev" on-click="{{prev}}"><</span>
+                <span class="form-progress">{{currentItem + 1}} / {{children.length}}</span>
+                <span class="next" on-click="{{next}}">></span>
+
+                <button on-click="{{next}}" class="form-continue">Continue</button>
+            </form>
+
+            <!-- Result Area -->
+            <div class="result expand-{{state.showResults}}">
+                <template repeat="{{res in results}}">
+                    <div class="result-item">
+                        <label for="{{res.label}}" class="result-label">{{res.label}}</label>
+                        <input class="result-value" id="{{res.label}}" value="{{res.value}}">
+                    </div>
+                </template>
+                <div class="commit-area show-{{state.showResults}}">
+                    <h4>Is this OK?</h4>
+                    <button on-click="{{next}}" class="result-submit">Yes, save it</button>
+                </div>
+            </div><!-- / Result Area -->
+        </div>
+
+    </template>
+
+    <script src="fullscreen-form.js"></script>
+
+</polymer-element>

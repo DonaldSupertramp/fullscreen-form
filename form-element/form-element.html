@@ -1,0 +1,20 @@
+<polymer-element name="form-element">
+
+    <template>
+
+        <link type="text/css" rel="stylesheet" href="form-element.css">
+
+        <div>
+            <template if="{{fieldtype === 'text'}}">
+                <li class="form-field {{state}}">
+                    <label>{{label}}</label>
+                    <input type="text" value="{{value}}" on-keydown="{{submit}}" id="input">
+                </li>
+            </template>
+        </div>
+
+    </template>
+
+    <script src="form-element.js"></script>
+
+</polymer-element>
