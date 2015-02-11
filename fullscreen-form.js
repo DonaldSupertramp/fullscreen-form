@@ -66,6 +66,16 @@ var element = (function(){
             },150);
         },
 
+        cancel: function(){
+
+            this.results.length = 0;
+            this.state.currentItem = 0;
+            this.state.showResults = false;
+
+            this.children[this.state.currentItem].toggleActive();
+
+        },
+
         next: function(){
 
             if(!component.children[component.state.currentItem].isValid()){
@@ -90,6 +100,11 @@ var element = (function(){
             setTimeout(function(){
                 component.children[component.state.currentItem].setFocus();
             },150);
+        },
+
+        submit: function(){
+            var submitEvent = new CustomEvent('fsc::submit',{detail: this.results});
+            document.dispatchEvent(submitEvent);
         }
     }
 

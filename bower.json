@@ -1,7 +1,7 @@
 {
   "name": "fullscreen-form",
   "main": "fullscreen-form.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Jan Schreyer <sprottenwels@googlemail.com>"
   ],
@@ -22,6 +22,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo"
   ]
 }

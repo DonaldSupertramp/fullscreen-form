@@ -24,7 +24,15 @@ var element = (function(){
         },
 
         toggleActive: function(){
-            this.state = this.state === 'active' ? '' : 'active';
+
+            if(this.state === 'active'){
+                this.state = '';
+                this.value = '';
+            }
+            else{
+                this.state = 'active';
+            }
+
         },
 
         submit: function(e){

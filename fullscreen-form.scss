@@ -82,17 +82,28 @@
       }
     }
 
-    .result-submit{
+    .res-btn{
       cursor: pointer;
       border: none;
       outline: none;
-      width: 100%;
-      display: block;
-      background: #87ef7a;
-      font-size: 16px;
-      font-weight: bold;
+      width: 145px;
+      margin: 0 100px;
+      display: inline-block;
+      font-size: 18px;
       text-align: center;
       padding: 4px 8px;
+
+      &.result-submit{
+        background: #87ef7a;
+      }
+
+      &.result-cancel{
+        background: #ef6d70;
+      }
     }
   }
+}
+
+html /deep/ .show-false, html/deep/ .hide-true, .show-false, .hide-true{
+  display: none;
 }

@@ -13,7 +13,7 @@
                 </ol>
 
                 <span class="prev" on-click="{{prev}}"><</span>
-                <span class="form-progress">{{currentItem + 1}} / {{children.length}}</span>
+                <span class="form-progress">{{state.currentItem + 1}} / {{children.length}}</span>
                 <span class="next" on-click="{{next}}">></span>
 
                 <button on-click="{{next}}" class="form-continue">Continue</button>
@@ -29,7 +29,8 @@
                 </template>
                 <div class="commit-area show-{{state.showResults}}">
                     <h4>Is this OK?</h4>
-                    <button on-click="{{next}}" class="result-submit">Yes, save it</button>
+                    <button on-click="{{submit}}" class="result-submit res-btn">Yes, save it</button>
+                    <button on-click="{{cancel}}" class="result-cancel res-btn">Nope, cancel it</button>
                 </div>
             </div><!-- / Result Area -->
         </div>
